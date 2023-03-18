@@ -1,0 +1,132 @@
+{
+    "players": [
+      {
+        "id": 1,
+        "name": "John",
+        "surname": "Doe",
+        "dateOfBirth": 950112000000,
+        "height": 180,
+        "weight": 75,
+        "injured": false
+      },
+      {
+        "id": 2,
+        "name": "Jane",
+        "surname": "Doe",
+        "dateOfBirth": 961401600000,
+        "height": 165,
+        "weight": 60,
+        "injured": true
+      },
+      {
+        "id": 3,
+        "name": "Bob",
+        "surname": "Smith",
+        "dateOfBirth": 900691200000,
+        "height": 190,
+        "weight": 85,
+        "injured": false
+      }
+    ],
+    "teams": [ {
+      "name": "FC Barcelona",
+      "establishmentYear": 2000,
+      "director": {
+        "id": 1,
+        "name": "Alice",
+        "surname": "Smith",
+        "dateOfBirth": 750672000000,
+        "role": "Director",
+        "validity": 2023
+      },
+      "coach": {
+        "id": 2,
+        "name": "Bob",
+        "surname": "Jones",
+        "dateOfBirth": 780739200000,
+        "role": "Coach",
+        "validity": 2022
+      },
+      "players": [
+        {
+          "id": 1,
+          "name": "John",
+          "surname": "Doe",
+          "dateOfBirth": 950112000000,
+          "height": 180,
+          "weight": 75,
+          "injured": false
+        },
+        {
+          "id": 2,
+          "name": "Jane",
+          "surname": "Doe",
+          "dateOfBirth": 961401600000,
+          "height": 165,
+          "weight": 60,
+          "injured": true
+        },
+        {
+          "id": 3,
+          "name": "Bob",
+          "surname": "Smith",
+          "dateOfBirth": 900691200000,
+          "height": 190,
+          "weight": 85,
+          "injured": false
+        }
+      ]
+    },
+    {
+      "name": "FC Random Team",
+      "establishmentYear": 2010,
+      "director": {
+        "id": 1,
+        "name": "Emma",
+        "surname": "Johnson",
+        "dateOfBirth": 780739200000,
+        "role": "Director",
+        "validity": 2024
+      },
+      "coach": {
+        "id": 2,
+        "name": "Andrew",
+        "surname": "Brown",
+        "dateOfBirth": 800937600000,
+        "role": "Coach",
+        "validity": 2023
+      },
+      "players": [
+        {
+          "id": 1,
+          "name": "Sarah",
+          "surname": "Wilson",
+          "dateOfBirth": 950112000000,
+          "height": 175,
+          "weight": 68,
+          "injured": false
+        },
+        {
+          "id": 2,
+          "name": "Tom",
+          "surname": "Smith",
+          "dateOfBirth": 990441600000,
+          "height": 182,
+          "weight": 80,
+          "injured": false
+        },
+        {
+          "id": 3,
+          "name": "Amy",
+          "surname": "Davis",
+          "dateOfBirth": 910310400000,
+          "height": 170,
+          "weight": 62,
+          "injured": true
+        }
+      ]
+    }
+    
+  ]
+  }
+  

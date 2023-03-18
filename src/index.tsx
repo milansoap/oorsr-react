@@ -3,6 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter } from 'react-router-dom';
+import TeamsList from './Components/TeamsList/TeamsList';
+
+
+// const router = createBrowserRouter([
+//   {
+//   path: '/teams',
+//   element: <TeamsList />,
+  
+  
+//   },
+// ]);
+
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
