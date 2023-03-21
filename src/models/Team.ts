@@ -1,6 +1,7 @@
 import { Player, Functionary } from "./Person";
 
 class Team {
+id!:number |undefined;
 name: string;
 establishmentYear: Number;
 director: Functionary;

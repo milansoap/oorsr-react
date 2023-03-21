@@ -29,6 +29,7 @@
       }
     ],
     "teams": [ {
+      "id" : 1,
       "name": "FC Barcelona",
       "establishmentYear": 2000,
       "director": {
@@ -78,6 +79,7 @@
       ]
     },
     {
+      "id" : 2,
       "name": "FC Random Team",
       "establishmentYear": 2010,
       "director": {

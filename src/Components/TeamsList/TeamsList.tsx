@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Team } from '../../models/Team';
 
 
@@ -25,9 +26,10 @@ interface TeamsListProps {
 
 
 
-const TeamsList = ({ handleTeamSelect, selectedTeam }: TeamsListProps) => {
+const TeamsList = ({handleTeamSelect, selectedTeam}) => {
 
     const teams: Team[] = data.teams
+    console.log(data.teams)
 
     return (
         <div className='container'>
@@ -36,25 +38,25 @@ const TeamsList = ({ handleTeamSelect, selectedTeam }: TeamsListProps) => {
                 {teams.map((team) => (
                     <>
 
-                        <div> {team.name != selectedTeam.name && (
+                        {/* <div> { (
                             <>
                                 <li key={team.name} className="list-group-item d-flex justify-content-between align-items-center p-5">
                                     {team.name}
-                                    <button onClick={() => { handleTeamSelect(team) }} className="btn btn-primary">
-                                        Select
+                                    <button className="btn btn-primary">
+                                        <Link to={'/teams/${team.id}'}> Select </Link>
                                     </button>
                                 </li>
                             </>
 
-                        )}</div>
+                        )}</div> */}
 
 
-                        <div> {team.name == selectedTeam.name && (
+                        <div> { (
                             <>
-                                <li key={team.name} className="list-group-item d-flex justify-content-between align-items-center active p-5">
+                                <li key={team.id} className="list-group-item d-flex justify-content-between align-items-center active p-5 m-2">
                                     {team.name}
                                     <button onClick={() => { handleTeamSelect(team) }} className="btn btn-light">
-                                        Select
+                                    <Link to={`/teams/${team.id}`}> Select {team.id} </Link>
                                     </button>
                                 </li>
                             </>

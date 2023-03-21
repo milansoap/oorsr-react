@@ -8,6 +8,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import { Team } from './models/Team';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TeamsList from './Components/TeamsList/TeamsList';
+import TeamData from './Components/Dashboard/TeamData/TeamData';
 
 
 
@@ -27,8 +28,9 @@ const handleTeamSelect = (team: Team) => {
           <Header />
         </nav>
         <Routes>
-          <Route path='/' element={<Dashboard selectedTeam={selectedTeam} />}></Route>
+        <Route path='/' element={<Dashboard selectedTeam={selectedTeam} />}></Route>
           <Route path='/teams' element={<TeamsList handleTeamSelect={handleTeamSelect} selectedTeam={selectedTeam} />} />
+          <Route path='/teams/:teamId' element={<TeamData team={null} />} />
         </Routes>
         <Footer />
 
